@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    overflow: hidden;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+    background-color: black;
+    background-attachment: fixed;
+}
+header{
+    width:100%;
+    height: 100vh;
+    background-color: transparent;
+    animation: fadeIn 1s ease-in-out;
+}
+.stars{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    animation: twincle 2s infinite;
+    box-shadow: 0 0 10px 2px rgba(255,255,255,0.5);
+}
+@keyframe twinkle {
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation:  slideInFromTop 1s ease-in-out;
+}
+.navbar h1{
+    color: rgba(149, 233, 240, 0.818);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: left;
+    padding-top: 20px;
+}
+.navbar a,.center-nav a,.social button{
+    color: white;
+    margin-left: 15px;
+    font-size: 1.3rem;
+    transition: all 0.5s ease;
+    animation: fadeInUp 1s ease-in-out;
+    padding-top: 20px;
+}
+.center-nav{
+    color: white;
+    padding-right: 3px;
+    padding-top: 20px;
+
+}
+.navbar ,.center-nav a:first-child{
+    color: rgb(222, 66, 181);
+}
+.navbar , .center-nav a:hover,.social button:hover{
+    color:rgb(222, 66, 181);
+    text-shadow: 0px 0px 30px rgb(222, 66, 181);
+}
+.navbar ,.center-nav a{
+    position: relative;
+    text-decoration: none;
+}
+.navbar .center-nav a::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:rgb(222, 66, 181) ;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .center-nav a:hover::before{
+    visibility: visible;
+    transform:scaleX(1);
+}
+.social button{
+    color: black;
+    background-color: rgb(222, 66, 181);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.social button:hover{
+    color: rgb(222, 66, 181);
+    background-color: white;
+}
+
+.box {
+    width: 600px; 
+    height: 600px;
+    margin: 50px ; 
+    padding: 20px;
+    background-color: #6d6c6ca3; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    margin-left: 30%;
+}
+
+.box-head {
+    width: 100%; 
+    padding: 20px; 
+    font-size: 24px; 
+    font-weight: bold;
+    color:rgb(222, 66, 181); 
+    margin: 0;
+    text-align: center;
+}
+.t1 td{
+    color: black;
+    display: block;
+    padding-top:10px;
+}
+.box-content input{
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(16, 8, 8, 0.212);
+}
+.t2{
+    margin-top: 10px;
+    color: black;
+    display: block;
+    padding-top:10px
+}
+.t3 button{
+    padding: 20px;
+    color: black;
+    background-color: rgb(222, 66, 181);
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.t3 button:hover{
+    color: rgb(222, 66, 181);
+    background-color: white;
+}
